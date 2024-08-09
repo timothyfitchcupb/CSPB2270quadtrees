@@ -11,7 +11,7 @@ int main() {
         {30, 30, 40, 40}
     };
 
-    QuadTree qt(image, 3, 5); // Create quadtree with a depth of 3 and a threshold of 5
+    QuadTree qt(image, 3, 5); // Create quadtree variable with a depth of 3 and a threshold of 5
     std::cout << "Quadtree created with root covering entire image." << std::endl;
     return 0;
 }
