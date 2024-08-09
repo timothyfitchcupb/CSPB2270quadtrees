@@ -12,7 +12,7 @@ QuadTreeNode::~QuadTreeNode() {
     for (int i = 0; i < 4; ++i) delete children[i];
 }
 
-// Check if the node is a leaf
+// Check if node is leaf
 bool QuadTreeNode::isLeaf() const {
     return children[0] == nullptr;
 }
@@ -30,7 +30,7 @@ QuadTree::~QuadTree() {
     delete root;
 }
 
-// Get the root node
+// Get root node
 QuadTreeNode* QuadTree::getRoot() {
     return root;
 }
@@ -50,7 +50,7 @@ void QuadTree::subdivide(QuadTreeNode* node, int level, const std::vector<std::v
     }
 }
 
-// Calculate average color for a region
+// Calculate average color for region
 int QuadTree::getAverageColor(int x, int y, int size, const std::vector<std::vector<int>>& image) const {
     int sum = 0;
     for (int i = y; i < y + size; ++i) {
@@ -61,7 +61,7 @@ int QuadTree::getAverageColor(int x, int y, int size, const std::vector<std::vec
     return sum / (size * size);
 }
 
-// Check if the region is homogeneous (sameness test)
+// Check if region is homogeneous (sameness test)
 bool QuadTree::isHomogeneous(QuadTreeNode* node, const std::vector<std::vector<int>>& image) const {
     int avgColor = getAverageColor(node->x, node->y, node->size, image);
     for (int i = node->y; i < node->y + node->size; ++i) {
