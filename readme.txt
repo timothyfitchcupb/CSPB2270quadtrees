@@ -27,13 +27,13 @@ If they are not, we keep on recursing.
 
 
 // Components of Quadtree Project 
-    QuadTree.h: The header file contains the declarations of the QuadTreeNode and QuadTree classes.
+    1. QuadTree.h: The header file contains the declarations of the QuadTreeNode and QuadTree classes.
 
-    QuadTree.cpp: This file defines the functionality of the QuadTreeNode and QuadTree classes.
+    2. QuadTree.cpp: This file defines the functionality of the QuadTreeNode and QuadTree classes.
 
-    Main.cpp: Main file demonstrating the creation and basic operation of a quadtree on sample greyscale image.
+    3. Main.cpp: Main file demonstrating the creation and basic operation of a quadtree on sample greyscale image.
 
-    Test file: Created simple tests to verify the correctness of the quadtrees construction and operations.
+    4. Test file: Created simple tests to verify the correctness of the quadtrees construction and operations.
 
 
 
