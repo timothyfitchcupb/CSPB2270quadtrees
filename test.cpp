@@ -8,9 +8,9 @@ void testQuadTreeConstruction(const std::vector<std::vector<int>>& image) {
     QuadTreeNode* root = qt.getRoot();
 
     if (root) {
-        std::cout << "Test Passed: Root node is created." << std::endl;
+        std::cout << "Test Passed: Root node created." << std::endl;
     } else {
-        std::cout << "Test Failed: Root node is not created." << std::endl;
+        std::cout << "Test Failed: Root node not created." << std::endl;
     }
 }
 
@@ -20,7 +20,7 @@ void testQuadTreeSubdivision(const std::vector<std::vector<int>>& image) {
     QuadTreeNode* root = qt.getRoot();
 
     if (root->children[0] && root->children[1] && root->children[2] && root->children[3]) {
-        std::cout << "Test Passed: Root is subdivided into four children." << std::endl;
+        std::cout << "Test Passed: Root subdivided into four children." << std::endl;
     } else {
         std::cout << "Test Failed: Root subdivision is incorrect." << std::endl;
     }
@@ -32,9 +32,9 @@ void testAverageColorCalculation(const std::vector<std::vector<int>>& image) {
     QuadTreeNode* root = qt.getRoot();
 
     if (root->color == 25) {
-        std::cout << "Test Passed: Average color is correctly calculated." << std::endl;
+        std::cout << "Test Passed: Average color correctly calculated." << std::endl;
     } else {
-        std::cout << "Test Failed: Average color calculation is incorrect." << std::endl;
+        std::cout << "Test Failed: Average color calculation incorrect." << std::endl;
     }
 }
 
@@ -44,9 +44,9 @@ void testLeafNodeIdentification(const std::vector<std::vector<int>>& image) {
     QuadTreeNode* root = qt.getRoot();
 
     if (!root->isLeaf()) {
-        std::cout << "Test Passed: Root node is correctly identified as not a leaf." << std::endl;
+        std::cout << "Test Passed: Root node correctly identified as not a leaf." << std::endl;
     } else {
-        std::cout << "Test Failed: Root node leaf identification is incorrect." << std::endl;
+        std::cout << "Test Failed: Root node leaf identification incorrect." << std::endl;
     }
 }
 
@@ -58,7 +58,7 @@ void testHomogeneityDetection(const std::vector<std::vector<int>>& image) {
     if (!root->isLeaf()) {
         std::cout << "Test Passed: Homogeneous region detected correctly." << std::endl;
     } else {
-        std::cout << "Test Failed: Homogeneous region detection is incorrect." << std::endl;
+        std::cout << "Test Failed: Homogeneous region detection incorrect." << std::endl;
     }
 }
 
