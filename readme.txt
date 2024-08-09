@@ -24,6 +24,8 @@ If they are not, we keep on recursing.
         b. If the color values are not similar, we keep recursing until they are.
     4. Use tests to confirm the above is working correctly
 
+
+
 // Components of Quadtree Project 
 
     QuadTree.h: The header file contains the declarations of the QuadTreeNode and QuadTree classes.
@@ -37,7 +39,6 @@ If they are not, we keep on recursing.
 
 
 /// Setup and Compilation
-
 1. First download from my Github repository
     https://github.com/timothyfitchcupb/CSPB2270quadtrees.git
 
