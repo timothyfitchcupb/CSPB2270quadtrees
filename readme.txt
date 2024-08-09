@@ -27,7 +27,6 @@ If they are not, we keep on recursing.
 
 
 // Components of Quadtree Project 
-
     QuadTree.h: The header file contains the declarations of the QuadTreeNode and QuadTree classes.
 
     QuadTree.cpp: This file defines the functionality of the QuadTreeNode and QuadTree classes.
@@ -38,12 +37,12 @@ If they are not, we keep on recursing.
 
 
 
-/// Setup and Compilation
-1. First download from my Github repository
-    https://github.com/timothyfitchcupb/CSPB2270quadtrees.git
+// Setup and Compilation
+    1. First download from my Github repository
+        https://github.com/timothyfitchcupb/CSPB2270quadtrees.git
 
-2. Compile the code 
-    g++ -o test QuadTree.cpp test.cpp
+    2. Compile the code 
+        g++ -o test QuadTree.cpp test.cpp
 
-3. Run the tests
-    ./test
+    3. Run the tests
+        ./test
