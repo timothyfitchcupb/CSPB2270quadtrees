@@ -27,13 +27,13 @@ If they are not, we keep on recursing. Destructors are important to properly rem
 
 
 // Components of Quadtree Project 
-    1. QuadTree.h: The header file contains the declarations of the QuadTreeNode and QuadTree classes.
+    1. QuadTree.h: Header file contains the declarations of the QuadTreeNode and QuadTree classes.
 
-    2. QuadTree.cpp: This file defines the functionality of the QuadTreeNode and QuadTree classes.
+    2. QuadTree.cpp: Defines the functionality of the QuadTreeNode and QuadTree classes.
 
-    3. Main.cpp: Main file demonstrating the creation and basic operation of a quadtree on sample greyscale image.
+    3. Main.cpp: Main file demonstrates the creation and operation of a quadtree on sample greyscale image.
 
-    4. Test file: Created simple tests to verify the correctness of the quadtrees construction and operations.
+    4. Test file: Simple tests to verify the correctness of the quadtrees construction and operations.
 
 
 
