@@ -28,6 +28,7 @@ I have learned a lot about quadtrees and have tried to implement a project that 
 /// Setup and Compilation
 
 1. First download from my Github repository
+    https://github.com/timothyfitchcupb/CSPB2270quadtrees.git
 
 2. Compile the code 
     g++ -o test QuadTree.cpp test.cpp
