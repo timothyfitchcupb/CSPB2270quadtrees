@@ -19,6 +19,11 @@ void testQuadTreeSubdivision(const std::vector<std::vector<int>>& image) {
     QuadTree qt(image, 2, 5);
     QuadTreeNode* root = qt.getRoot();
 
+    if (!root) {
+        std::cerr << "Error: Root node is nullptr." << std::endl;
+        return;
+    }
+
     if (root->children[0] && root->children[1] && root->children[2] && root->children[3]) {
         std::cout << "Test Passed: Root subdivided into four children." << std::endl;
     } else {
@@ -30,6 +35,11 @@ void testQuadTreeSubdivision(const std::vector<std::vector<int>>& image) {
 void testAverageColorCalculation(const std::vector<std::vector<int>>& image) {
     QuadTree qt(image, 1, 5);
     QuadTreeNode* root = qt.getRoot();
+
+    if (!root) {
+        std::cerr << "Error: Root node is nullptr." << std::endl;
+        return;
+    }
 
     if (root->color == 25) {
         std::cout << "Test Passed: Average color correctly calculated." << std::endl;
@@ -43,6 +53,11 @@ void testLeafNodeIdentification(const std::vector<std::vector<int>>& image) {
     QuadTree qt(image, 3, 5);
     QuadTreeNode* root = qt.getRoot();
 
+    if (!root) {
+        std::cerr << "Error: Root node is nullptr." << std::endl;
+        return;
+    }
+
     if (!root->isLeaf()) {
         std::cout << "Test Passed: Root node correctly identified as not a leaf." << std::endl;
     } else {
@@ -54,6 +69,11 @@ void testLeafNodeIdentification(const std::vector<std::vector<int>>& image) {
 void testHomogeneityDetection(const std::vector<std::vector<int>>& image) {
     QuadTree qt(image, 3, 5);
     QuadTreeNode* root = qt.getRoot();
+
+    if (!root) {
+        std::cerr << "Error: Root node is nullptr." << std::endl;
+        return;
+    }
 
     if (!root->isLeaf()) {
         std::cout << "Test Passed: Homogeneous region detected correctly." << std::endl;
