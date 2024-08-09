@@ -13,19 +13,26 @@ Areas that conform with each other and have low levels of detail are processed f
 This approach saves memory and computation time by simplifying the areas that have the same color.
 
 I have learned a lot about quadtrees and have tried to implement a project that effectively shows this through a simple c++ greyscale image processing program.
-The program looks at our greyscale values, and if colors are similar, we stop. If they are not, we keep recursing. 
+The program looks at our greyscale values, and if colors are similar, we stop, and the node is left as a leaf node.
+If they are not, we keep on recursing. 
 
+// Steps of Program in Simple Terms
+    1. Define 4x4 greyscale image where each pixel is defined with a color value
+    2. QuadTree constructor initializes root node covering entire image.
+    3. Subdivision happens via the subdivide function. The function recursively divides regions based on how similar their color values are.
+        a. If the color values are similar, it is determined to be homogenous and left a lead node
+        b. If the color values are not similar, we keep recursing until they are.
 
 
 // Components of Quadtree Project 
 
-- QuadTree.h: The header file contains the declarations of the QuadTreeNode and QuadTree classes.
+    QuadTree.h: The header file contains the declarations of the QuadTreeNode and QuadTree classes.
 
-- QuadTree.cpp: This file defines the functionality of the QuadTreeNode and QuadTree classes.
+    QuadTree.cpp: This file defines the functionality of the QuadTreeNode and QuadTree classes.
 
-- Main.cpp: Main file demonstrating the creation and basic operation of a quadtree on sample greyscale image.
+    Main.cpp: Main file demonstrating the creation and basic operation of a quadtree on sample greyscale image.
 
-- Test file: Created simple tests to verify the correctness of the quadtrees construction and operations.
+    Test file: Created simple tests to verify the correctness of the quadtrees construction and operations.
 
 
 
