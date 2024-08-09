@@ -17,12 +17,12 @@ The program looks at our greyscale values, and if colors are similar, we stop, a
 If they are not, we keep on recursing. 
 
 // Steps of Program in Simple Terms
-    1. Define 4x4 greyscale image where each pixel is defined with a color value
+    1. Define 4x4 greyscale image (in Main.cpp) where each pixel is defined with a color value
     2. QuadTree constructor initializes root node covering entire image.
     3. Subdivision happens via the subdivide function. The function recursively divides regions based on how similar their color values are.
         a. If the color values are similar, it is determined to be homogenous and left a lead node
         b. If the color values are not similar, we keep recursing until they are.
-
+    4. Use tests to confirm the above is working correctly
 
 // Components of Quadtree Project 
 
