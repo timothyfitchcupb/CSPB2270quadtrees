@@ -38,11 +38,15 @@ If they are not, we keep on recursing. Destructors are important to properly rem
 
 
 // Setup and Compilation
-    1. First download from my Github repository
-        https://github.com/timothyfitchcupb/CSPB2270quadtrees.git
+    1. First download / clone from my Github repository
+        git clone https://github.com/timothyfitchcupb/CSPB2270quadtrees.git
 
-    2. Compile the code 
+    2. Compile the code and test
+        g++ -o quadtree Main.cpp QuadTree.cpp
         g++ -o test QuadTree.cpp test.cpp
 
-    3. Run the tests
+    3. Run the program
+        ./quadtree
+
+    4. Run the tests
         ./test
