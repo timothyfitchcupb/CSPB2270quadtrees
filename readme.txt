@@ -41,12 +41,15 @@ If they are not, we keep on recursing. Destructors are important to properly rem
     1. First download / clone from my Github repository
         git clone https://github.com/timothyfitchcupb/CSPB2270quadtrees.git
 
-    2. Compile the code and test
+    2. Navigate to cloned project directory
+        cd CSPB2270quadtrees
+
+    3. Compile the code and test
         g++ -o quadtree Main.cpp QuadTree.cpp
         g++ -o test QuadTree.cpp test.cpp
 
-    3. Run the program
+    4. Run the program
         ./quadtree
 
-    4. Run the tests
+    5. Run the tests
         ./test
