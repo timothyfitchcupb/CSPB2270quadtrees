@@ -16,6 +16,7 @@ I have learned a lot about quadtrees and have tried to implement a project that 
 The program looks at our greyscale values, and if colors are similar, we stop, and the node is left as a leaf node.
 If they are not, we keep on recursing. 
 
+
 // Steps of Program in Simple Terms
     1. Define 4x4 greyscale image (in Main.cpp) where each pixel is defined with a color value
     2. QuadTree constructor initializes root node covering entire image.
