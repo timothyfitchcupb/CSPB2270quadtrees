@@ -3,6 +3,8 @@
 
 #include <vector>
 
+// Values represent intensity of pixel
+
 std::vector<std::vector<int>> getImageData() {
     return {
         {10, 10, 20, 20},
