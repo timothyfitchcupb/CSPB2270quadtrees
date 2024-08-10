@@ -1,6 +1,6 @@
 #include "QuadTree.h"
+#include "ImageData.h" 
 #include <iostream>
-#include <vector>
 
 // Function to test construction of quadtree
 void testQuadTreeConstruction(const std::vector<std::vector<int>>& image) {
@@ -85,13 +85,8 @@ void testHomogeneityDetection(const std::vector<std::vector<int>>& image) {
 int main() {
     std::cout << "Running Quadtree Tests..." << std::endl;
 
-    // Example 4x4 image with grayscale values (from Main.cpp)
-    std::vector<std::vector<int>> image = {
-        {10, 10, 20, 20},
-        {10, 10, 20, 20},
-        {30, 30, 40, 40},
-        {30, 30, 40, 40}
-    };
+    // Get the 4x4 image with grayscale values
+    std::vector<std::vector<int>> image = getImageData();
 
     testQuadTreeConstruction(image);
     testQuadTreeSubdivision(image);
