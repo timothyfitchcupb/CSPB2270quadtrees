@@ -17,12 +17,15 @@ The program looks at our greyscale values, and if colors are similar, we stop, a
 If they are not, we keep on recursing. Destructors are important to properly remove childnodes and eliminate memory leaks.
 
 // Steps of Program in Simple Terms
-    1. Define 4x4 greyscale image (in ImageData.h) where each pixel is defined with a color value
-    2. QuadTree constructor initializes root node covering entire image.
-    3. Subdivision happens via the subdivide function. The function recursively divides regions based on how similar their color values are.
+    1. Define 4x4 greyscale image (in ImageData.h) where each pixel is defined with a color intensity value (I made one, feel free to edit values)
+    2. Set depth and threshold parameters (in Main.cpp) (Also set up an example please feel free to edit)
+        Depth parameter sets max levels a quadtree can have 
+        Threshold parameter sets allowable difference in pixel intensity to be considered homogenous / same
+    3. QuadTree constructor initializes root node covering entire image.
+    4. Subdivision happens via the subdivide function. The function recursively divides regions based on how similar their color values are.
         a. If the color values are similar, it is determined to be homogenous and left a leaf node
         b. If the color values are not similar, we keep recursing until they are.
-    4. Use tests to confirm the above is working correctly
+    5. Use tests to confirm the above is working correctly
 
 
 
@@ -34,7 +37,7 @@ If they are not, we keep on recursing. Destructors are important to properly rem
     3. QuadTree.cpp: Defines the functionality of the QuadTreeNode and QuadTree classes.
 
     4. Main.cpp: Main file demonstrates the creation and operation of a quadtree on sample greyscale image.
-
+             
     5. Test file: Simple tests to verify the correctness of the quadtrees construction and operations.
 
 
